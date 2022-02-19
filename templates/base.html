@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock title %}</title>
+    <link href="{% static 'fontawesomefree/css/all.min.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'style.css' %}" rel="stylesheet">
+</head>
+<body>
+    <header>
+        {% if request.user.is_authenticated %}
+            <p>{{request.user.username}}</p>
+            <a href="{% url 'logout' %}">Bийти</a>
+        {% else %}
+            <a href="{% url 'login' %}">Увійти</a>
+            <a href="{% url 'register' %}">Зареєструватись</a>
+        {% endif %}
+    </header>
+    {% block content %}
+    {% endblock content %}
+    <footer>
+    
+    </footer>
+    <script src="{% static 'script.js' %}"></script>
+</body>
+</html>

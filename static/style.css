@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial';
+    box-sizing: border-box;
+}
+
+a {
+    color: blueviolet;
+}
+
+i {
+    font-family: 'Font Awesome 5 Free' !important;
+}
+
+.active {
+    background-color: #6441A1;
+}
+
+h1 {
+    text-align: center;
+    margin: 25px;
+}
+
+h2 {
+    color: #fff;
+    background-color: blueviolet;
+    width: 100%;
+    cursor: pointer;
+    text-align: center;
+    padding: 10px 0;
+    margin: 15px 0;
+}
+
+.helptext {
+    display: none;
+}
+
+.wrapper-form-log-reg {
+    text-align: center;
+}
+
+input[type="checkbox"] {
+    accent-color: blueviolet;    
+}
+
+ul {
+    list-style-type: none;
+    column-count: 4;
+}
+
+header {
+    height: 50px;
+    line-height: 50px;
+    background-color: blueviolet;
+    color: #fff;
+    text-align: right;
+}
+
+header p, header a {
+    display: inline-block;
+    padding-right: 80px;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 0 100px;
+}
+
+form label {
+    display: block;
+    padding: 5px 0;
+}
+
+input[type=submit] {
+    cursor: pointer;
+    margin: 20px 0;
+    padding: 10px;
+    background-color: blueviolet;
+    border: 1px solid blueviolet;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.item {
+    position: relative;
+    padding: 5px;
+    background-color: #C8C8C8;
+    border-bottom: 3px solid blueviolet;
+}
+
+.item p {
+    display: inline-block;
+}
+
+.item .desc {
+    color: #6441A1;
+    font-size: 14px;
+}
+
+.errorlist {
+    display: flex;
+    justify-content: center;
+    color: #6441A1;
+}
+
+.item .date {
+    text-align: right;
+}
+
+.genre {
+    padding: 5px;
+    margin: 0 10px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+#add-item {
+    display: none;
+}
+
+.actions {
+    background-color: blueviolet;
+    height: 50px;
+    line-height: 50px;
+}
+
+.actions li {
+    text-align: center;
+}
+
+.actions li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.actions-item {
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.Action {
+    background-color: #FF3E41;
+}
+
+.Adventure {
+    background-color: coral;
+}
+
+.RPG {
+    background-color: #E001FF;
+}
+
+.MMO {
+    background-color: #0FC0FC;
+}
+
+.Fighting {
+    background-color: #FFDD00;
+}
+
+.Horror {
+    background-color: #007977;
+}
+
+.Survival {
+    background-color: #EC295B;
+}
+
+.Indi {
+    background-color: #ABE0AE;
+}
+
+.Racing {
+    background-color: #FF00AE;
+}
+
+.MOBA {
+    background-color: #51C876;
+}
+
+.Strategy {
+    background-color: #645552;
+}
+
+.Shooter {
+    background-color: #00FF00;
+}

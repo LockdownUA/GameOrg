@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}Зареєструватись{% endblock title %}
+
+{% block content %}
+<main>
+    <h1>Зареєструватись в системі</h1>
+    <div class="wrapper-form-log-reg">
+        <form method="POST" action="{% url 'register' %}">
+            {% csrf_token %}
+            {{form.as_p}}
+            <input value="Зареєструватись" type="submit"/>
+        </form>
+    </div>
+</main>
+{% endblock content %}
